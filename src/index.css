@@ -1,13 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9f8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.headerApp {
+  height: 70px;
+  background-color: #283076;
+}
+
+.headerTextColor {
+  color: white;
+}
+
+.headerListItem {
+  height: 35px;
+  width: 90px;
+  background-color: #279ad5;
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container-1 {
+  background-color: #283076;
+}
+
+.container-1Text {
+  color: white;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .slide {
+  height: 80vh;
+}
+
+.carousel .slide img {
+  max-height: 100%;
+  width: auto;
+}
+
+.legend {
+  background-color: red;
+}
+
+.formContainer {
+  background-color: #e64a19;
+}
+
+.input {
+  height: 50px;
+  width: 250px;
+  background-color: teal;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.bg-primary {
+  background-color: #91c849;
+  padding: 15px;
+}
+
+.bg-card {
+  background-color: #91c849;
+  padding: 15px;
+}
+
+.zoom {
+  transition: transform 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  margin: 0px 25px;
+  cursor: pointer;
+}
+
+.imageFooterContainer {
+  height: 450px;
+}
+
+.imgFooter {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-footer-image {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-footer-img {
+  height: 50px;
+  width: 150px;
+  background-color: #e64a19;
+  color: white;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #283076;
+  color: white;
+}
+
+.btn {
+  height: 40px;
+  width: 90px;
+  background-color: #91c849;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
