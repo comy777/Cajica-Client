@@ -5,6 +5,8 @@ export interface DetailsProps {
   title: string;
   image: string;
   path: string;
+  body: string;
+  imgDetails: string;
 }
 
 export interface FormUser {

@@ -22,7 +22,7 @@ const useForm = <T extends Object>(initialState: T) => {
     setLoading(true);
     const resp = await sendFormApi(form);
     setLoading(false);
-    if (resp !== "Solicitud recibida con exito") {
+    if (resp !== "Su peticion ha sido recibida con exito") {
       showAlert({
         title: "Error Solicitud",
         text: resp,
@@ -31,7 +31,7 @@ const useForm = <T extends Object>(initialState: T) => {
       return;
     }
     showAlert({ title: "Solicitud", text: resp, icon: "success" });
-    console.log(resp);
+    reset();
   };
   return {
     ...state,

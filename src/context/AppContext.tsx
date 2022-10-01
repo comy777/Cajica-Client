@@ -5,10 +5,10 @@ import useAppReducer from "../hooks/useAppReducer";
 export const AppContext = createContext({} as StateAppContextProps);
 
 export const AppContextProvider = ({ children }: any) => {
-  const { state, setShowHeader } = useAppReducer();
+  const { state, setShowMenu } = useAppReducer();
 
   return (
-    <AppContext.Provider value={{ ...state, setShowHeader }}>
+    <AppContext.Provider value={{ ...state, setShowMenu }}>
       {children}
     </AppContext.Provider>
   );

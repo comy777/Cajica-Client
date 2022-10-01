@@ -17,7 +17,7 @@ body {
 
 .headerListItem {
   height: 35px;
-  width: 90px;
+  width: 150px;
   background-color: #279ad5;
   margin: 0px 5px;
   display: flex;
@@ -128,4 +128,36 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+}
+
+.menu {
+  height: 45px;
+}
+
+.menu-line {
+  height: 8px;
+  width: 40px;
+  background-color: #91c849;
+  margin: 4px 0px;
+}
+
+.show-menu {
+  background-color: #91c849;
+  padding: 5px;
+}
+
+.show-menu-btn {
+  background-color: #283076;
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .carousel .slide {
+    height: auto;
+  }
 }

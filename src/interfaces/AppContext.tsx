@@ -1,17 +1,17 @@
 export interface StateAppContextProps {
-  showHeader: boolean;
-  setShowHeader: (show: boolean) => void;
+  showMenu: boolean;
+  setShowMenu: (show: boolean) => void;
 }
 
 export interface StateAppContext {
-  showHeader: boolean;
+  showMenu: boolean;
 }
 
 export const appContextInitialProps: StateAppContext = {
-  showHeader: true,
+  showMenu: false,
 };
 
 export type AppContextActions = {
-  type: "set header show";
+  type: "set show menu";
   payload: { show: boolean };
 };

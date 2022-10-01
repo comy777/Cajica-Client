@@ -13,12 +13,14 @@ const FormComponent = () => {
   const form = { first_name, last_name, email, msg };
 
   return (
-    <div className="py-7 formContainer">
-      <h2 className="text-center text-2xl">Contactenos</h2>
+    <div className="py-7 formContainer mb-10">
+      <h2 className="text-center text-2xl font-bold text-white ">
+        Contactenos
+      </h2>
       <div className="flex justify-center">
         <form autoComplete="false" onSubmit={(e) => handleSubmit({ e, form })}>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Nombres
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
@@ -32,7 +34,7 @@ const FormComponent = () => {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Apellidos
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
@@ -46,7 +48,7 @@ const FormComponent = () => {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Correo electronico
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
@@ -60,7 +62,7 @@ const FormComponent = () => {
             </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700">
+            <label className="block text-sm font-medium text-white">
               Mensaje
             </label>
             <div className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">

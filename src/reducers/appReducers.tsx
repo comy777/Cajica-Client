@@ -5,10 +5,10 @@ export const appReducer = (
   action: AppContextActions
 ): StateAppContext => {
   switch (action.type) {
-    case "set header show":
+    case "set show menu":
       return {
         ...state,
-        showHeader: action.payload.show,
+        showMenu: action.payload.show,
       };
     default:
       return state;

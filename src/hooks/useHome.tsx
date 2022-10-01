@@ -1,11 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { getDeviceInfo } from "../utils/movil";
 
 const useHome = () => {
-  const { setShowHeader, showHeader } = useContext(AppContext);
-  const location = useLocation();
+  const { showMenu } = useContext(AppContext);
   const [videoWidth, setVideoWidth] = useState("516");
 
   useEffect(() => {
@@ -15,14 +13,9 @@ const useHome = () => {
     }
   }, []);
 
-  useEffect(() => {
-    if (location.pathname === "/") {
-      if (!showHeader) setShowHeader(true);
-    }
-  }, [location]);
-
   return {
     videoWidth,
+    showMenu,
   };
 };
 
