@@ -15,7 +15,9 @@ const ImageFooter = () => {
             </h2>
           </div>
           <div>
-            <button className="btn-footer-img rounded-lg">Ir</button>
+            <a href="https://cajica.gov.co/diadelreciclaje/" target="_blanck">
+              <button className="btn-footer-img rounded-lg">Ir</button>
+            </a>
           </div>
         </div>
       </div>

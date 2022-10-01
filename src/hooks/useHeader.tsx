@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
 const useHeader = () => {
-  const { showMenu, setShowMenu } = useContext(AppContext);
+  const { showMenu, setShowMenu, showHeader } = useContext(AppContext);
 
   const handleNavigate = () => setShowMenu(false);
 
@@ -10,6 +10,7 @@ const useHeader = () => {
     showMenu,
     setShowMenu,
     handleNavigate,
+    showHeader,
   };
 };
 

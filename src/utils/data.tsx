@@ -15,7 +15,7 @@ export const dataCards = [
 
 export const dataHeader = [
   {
-    title: "Reci-Cajica",
+    title: "Reci-Cajicá",
     route: "#home",
   },
   {
@@ -23,7 +23,7 @@ export const dataHeader = [
     route: "#about",
   },
   {
-    title: "Mas informacion",
+    title: "Mas información",
     route: "#more-information",
   },
   {

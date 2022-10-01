@@ -1,6 +1,6 @@
-import { ChangeEvent, FormEvent, FormEventHandler, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { sendFormApi } from "../api/request";
-import { FormUser, SubmitForm } from "../interfaces/Components";
+import { SubmitForm } from "../interfaces/Components";
 import { showAlert } from "../utils/alerts";
 
 const useForm = <T extends Object>(initialState: T) => {

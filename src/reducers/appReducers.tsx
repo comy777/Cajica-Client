@@ -10,6 +10,11 @@ export const appReducer = (
         ...state,
         showMenu: action.payload.show,
       };
+    case "set show header":
+      return {
+        ...state,
+        showHeader: action.payload.show,
+      };
     default:
       return state;
   }

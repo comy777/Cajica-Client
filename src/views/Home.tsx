@@ -52,7 +52,9 @@ const Home = () => {
             <ImportanComponent />
             <ListImages />
             <section className="p-5">
-              <h2 className="md:text-3xl my-4 sm:text-xl">Videos</h2>
+              <h2 className="md:text-3xl my-4 sm:text-xl">
+                Cajicá en pro del ambiente
+              </h2>
               <div className="grid justify-items-center">
                 <iframe
                   width={videoWidth}
