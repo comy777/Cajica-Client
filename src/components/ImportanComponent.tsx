@@ -1,5 +1,6 @@
-import { dataCards } from "../utils/data";
-const ImportanComponent = () => {
+import { ImportanComponentProps } from "../interfaces/Components";
+
+const ImportanComponent = ({data} : ImportanComponentProps) => {
   const Fade = require("react-reveal/Fade");
   return (
     <div>
@@ -24,10 +25,9 @@ const ImportanComponent = () => {
           reducir-reutilizar-reciclar.
         </h2>
         <div className="mt-2">
-          {dataCards.map((item, i) => {
-            const classCard = i === 1 ? "bg-card" : "bg-primary";
+          {data.map((item) => {
             return (
-              <div key={i.toString()}>
+              <div key={item._id.toString()}>
                 <Fade>
                   <div className="h-auto mb-2 rounded-3xl bg-white p-5">
                     <h2 className="md:text-lg font-bold">{item.title}</h2>

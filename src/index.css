@@ -156,6 +156,29 @@ body {
   align-items: center;
 }
 
+.images-slider {
+  padding-top: 70%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+} 
+
+.slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.swiper-button-prev {
+  left: 30;
+}
+
+.swiper {
+  height: 450px;
+}
+
 @media (max-width: 767.98px) {
   .carousel .slide {
     height: auto;

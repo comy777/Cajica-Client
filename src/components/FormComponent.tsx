@@ -1,4 +1,5 @@
 import useForm from "../hooks/useForm";
+import DropZone from "./DropZone";
 const FormComponent = () => {
   const {
     first_name,
@@ -6,16 +7,15 @@ const FormComponent = () => {
     email,
     msg,
     handleChange,
-    reset,
     loading,
-    handleSubmit,
+    handleSubmit
   } = useForm({ first_name: "", last_name: "", email: "", msg: "" });
   const form = { first_name, last_name, email, msg };
 
   return (
     <div className="py-7 formContainer mb-10">
       <h2 className="text-center text-2xl font-bold text-white ">
-        Contactenos
+        Ayudanos con una idea!
       </h2>
       <div className="flex justify-center">
         <form autoComplete="false" onSubmit={(e) => handleSubmit({ e, form })}>
@@ -63,18 +63,19 @@ const FormComponent = () => {
           </div>
           <div>
             <label className="block text-sm font-medium text-white">
-              Mensaje
+              Tu idea
             </label>
             <div className="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
               <textarea
                 rows={5}
-                className="w-72 px-1"
+                className="md:w-96 sm:w-96 px-1"
                 name="msg"
                 value={msg}
                 onChange={handleChange}
               />
             </div>
           </div>
+          <DropZone />
           <button type="submit" className="btn float-right">
             {loading ? "Enviando" : "Enviar"}
           </button>

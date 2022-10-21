@@ -1,18 +1,3 @@
-export const dataCards = [
-  {
-    title: "Reducir",
-    body: "Es decir evitar que se genere la basura, comprando y utilizando los productos de la manera correcta. Tenemos que reducir el volumen de los productos que consumimos, pensando que para la fabricación de estas cosas necesitamos materias primas.",
-  },
-  {
-    title: "Reutilizar",
-    body: "Es darle mayor utilidad a las cosas sin la necesidad de destruirlas. Muchos productos pueden ser usados varias veces, extendiendo su vida útil. Hay que tenerlos en cuenta cuando hacemos las compras, ya que esto hace que generemos menos residuos.",
-  },
-  {
-    title: "Reciclar",
-    body: "Es devolver al ciclo productivo los residuos. Reciclando convertimos a los materiales recuperados de los residuos en valorados recursos. Los beneficios del reciclado son muchos, pero podemos organizarlos en dos principales aspectos: Cuida el planeta.",
-  },
-];
-
 export const dataHeader = [
   {
     title: "Reci-Cajicá",
@@ -29,6 +14,10 @@ export const dataHeader = [
   {
     title: "Contactenos",
     route: "#contact",
+  },
+  {
+    title: "Ideas",
+    route: "ideas",
   },
 ];
 
@@ -74,3 +63,151 @@ export const dataCardImages = [
       "https://media.istockphoto.com/photos/world-earth-day-concept-green-energy-renewable-and-sustainable-and-picture-id1327919661?k=20&m=1327919661&s=612x612&w=0&h=YYTwKzUP708Mn6V-_SdrzEplNrrT1ELKhOvxjYTTk9Q=",
   },
 ];
+
+export const dataListMaterials = [
+  {
+    title: "Todos los plásticos aptos como",
+    items: [
+      {
+        title: "Botellas plásticas identificadas para reciclaje",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Tapas plásticas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "bolsas plásticas salvo las empleadas para la basura",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Envases de productos lácteos",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Bandejas plásticas de huevos",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Latas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Platos y vasos desechables",
+        image: "",
+        href: "",
+      },
+    ],
+  },
+  {
+    title: "Papel y cartón",
+    items: [
+      {
+        title: "Revistas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Periódicos viejos",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Cajas de Cereales y Zapatos",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Cuadernos",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Hojas impresas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Papel para envolver",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Cajas de huevos de cartón",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Libretas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Sobres",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Cartulinas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Cartón",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Cartón",
+        image: "",
+        href: "",
+      },
+    ],
+  },
+  {
+    title: "Vidrios",
+    items: [
+      {
+        title: "Botellas de Vino",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Botellas de bebidas",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Frascos de alimentos",
+        image: "",
+        href: "",
+      },
+      {
+        title: "Recipientes de cosmética y perfumería",
+        image: "",
+        href: "",
+      },
+    ],
+  },
+  {
+    title: "Testiles",
+    items: [],
+  },
+  {
+    title: "Muebles y electrodomésticos",
+    items: [],
+  },
+];
+
+export const imagesCarousel = [
+  "https://res.cloudinary.com/djtqfpw2e/image/upload/v1665153064/Cajica/1_vpy2b1.jpg",
+  "https://res.cloudinary.com/djtqfpw2e/image/upload/v1665153064/Cajica/3_jdbsza.jpg",
+  "https://res.cloudinary.com/djtqfpw2e/image/upload/v1665153065/Cajica/2_iwoxwo.jpg",
+  "https://res.cloudinary.com/djtqfpw2e/image/upload/v1665153064/Cajica/4_snogjo.jpg"
+]

@@ -1,7 +1,8 @@
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "../views/Home";
 import ErrorPage from "../views/ErrorPageScreen";
 import Details from "../views/Details";
+import IdeasScreen from "../views/IdeasScreen";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "details/:id",
     element: <Details />,
+  },
+  {
+    path: "ideas",
+    element: <IdeasScreen />,
   },
 ]);
 

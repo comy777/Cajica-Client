@@ -10,11 +10,15 @@ const useAppReducer = () => {
 
   const setShowHeader = (show: boolean) =>
     dispatch({ type: "set show header", payload: { show } });
+  
+  const setFile = (file: File | undefined) =>
+    dispatch({ type: "set file", payload: { file } });
 
   return {
     state,
     setShowMenu,
     setShowHeader,
+    setFile
   };
 };
 

@@ -15,6 +15,11 @@ export const appReducer = (
         ...state,
         showHeader: action.payload.show,
       };
+    case "set file":
+      return {
+        ...state,
+        file: action.payload.file,
+      };
     default:
       return state;
   }

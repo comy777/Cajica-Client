@@ -5,10 +5,11 @@ import ListImages from "../components/ListImages";
 import ImageFooter from "../components/ImageFooter";
 import useHome from "../hooks/useHome";
 import CarouselComponent from "../components/CarouselComponent";
+import ListMaterials from "../components/ListMaterials";
 
 const Home = () => {
   const Fade = require("react-reveal/Fade");
-  const { videoWidth, showMenu } = useHome();
+  const { videoWidth, showMenu, dataCard, dataMaterials } = useHome();
 
   return (
     <RemoveScroll enabled={showMenu}>
@@ -31,42 +32,43 @@ const Home = () => {
                     actividades cotidianas más sencillas y gratificantes que
                     podemos llevar a cabo. Tanto, que puede participar cualquier
                     miembro de la familia, incluso los más peques de la casa.
-                    Anima a tus hijos e hijas a practicarlo, ¡aprendizaje y
-                    diversión van de la mano! A pesar de que el ser humano es el
-                    responsable de producir una gran cantidad de residuos,
-                    parece que a veces aún nos resistimos a reciclar. Así lo
-                    único que logramos es perjudicarnos a nosotros mismos y al
-                    medio ambiente, tanto en el corto plazo como en el futuro de
-                    los que vendrán. Para cualquier madre o padre esta es una
-                    cuestión preocupante. ¿Te has preguntado alguna vez qué tipo
-                    de planeta se encontrarán tus hijos e hijas en unos años?
-                    Este pequeño gesto, que forma parte de practicar un consumo
-                    responsable, hará que nuestras generaciones futuras puedan
-                    disfrutar de un planeta verde y azul.
                   </p>
                 </div>
               </section>
             </Fade>
           </div>
           <div id="about">
-            <ImportanComponent />
-            <ListImages />
-            <section className="p-5">
-              <h2 className="md:text-3xl my-4 sm:text-xl">
-                Cajicá en pro del ambiente
-              </h2>
-              <div className="grid justify-items-center">
-                <iframe
-                  width={videoWidth}
-                  height="315"
-                  src="https://www.youtube.com/embed/HvqX6ZMKCFQ"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
-              </div>
-            </section>
+            <ImportanComponent data={dataCard} />
+            <ListImages data={dataCard} />
           </div>
         </div>
+        <div className="px-5">
+          <h2 className="md:text-3xl sm:text-xl my-2" >Materiales reciclables que encuentras en casa</h2>
+          <div id="list materials" className="md:flex mt-5 md:justify-center sm:grid sm:grid-rows-4">
+            {dataMaterials.map((item, i) => (
+              <div key={item._id.toString()} >
+                  <ListMaterials 
+                    title={item.title} 
+                    data={item.items} 
+                  />
+              </div>
+            ))}
+          </div>
+        </div>
+        <section className="p-5">
+          <h2 className="md:text-3xl my-4 sm:text-xl">
+            Cajicá en pro del ambiente
+          </h2>
+          <div className="grid justify-items-center">
+            <iframe
+              width={videoWidth}
+              height="315"
+              src="https://www.youtube.com/embed/HvqX6ZMKCFQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
+          </div>
+        </section>
         <div id="more-information">
           <ImageFooter />
         </div>
