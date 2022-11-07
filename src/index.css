@@ -161,7 +161,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-} 
+}
 
 .slider-img {
   position: absolute;
@@ -177,6 +177,18 @@ body {
 
 .swiper {
   height: 450px;
+}
+
+.fab {
+  height: 70px;
+  width: 70px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #91c849;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
 @media (max-width: 767.98px) {

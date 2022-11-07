@@ -6,6 +6,7 @@ import ImageFooter from "../components/ImageFooter";
 import useHome from "../hooks/useHome";
 import CarouselComponent from "../components/CarouselComponent";
 import ListMaterials from "../components/ListMaterials";
+import Galerycomponent from "../components/Galerycomponent";
 
 const Home = () => {
   const Fade = require("react-reveal/Fade");
@@ -13,6 +14,7 @@ const Home = () => {
 
   return (
     <RemoveScroll enabled={showMenu}>
+      <Galerycomponent />
       <div className="overflow-hidden">
         <div id="home">
           <CarouselComponent />
@@ -47,10 +49,10 @@ const Home = () => {
           <div id="list materials" className="md:flex mt-5 md:justify-center sm:grid sm:grid-rows-4">
             {dataMaterials.map((item, i) => (
               <div key={item._id.toString()} >
-                  <ListMaterials 
-                    title={item.title} 
-                    data={item.items} 
-                  />
+                <ListMaterials
+                  title={item.title}
+                  data={item.items}
+                />
               </div>
             ))}
           </div>

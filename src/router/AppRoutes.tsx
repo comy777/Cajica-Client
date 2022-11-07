@@ -3,6 +3,7 @@ import Home from "../views/Home";
 import ErrorPage from "../views/ErrorPageScreen";
 import Details from "../views/Details";
 import IdeasScreen from "../views/IdeasScreen";
+import Galery from "../views/Galery";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "ideas",
     element: <IdeasScreen />,
+  },
+  {
+    path: "galery",
+    element: <Galery />,
   },
 ]);
 
