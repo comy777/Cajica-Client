@@ -4,6 +4,7 @@ import ErrorPage from "../views/ErrorPageScreen";
 import Details from "../views/Details";
 import IdeasScreen from "../views/IdeasScreen";
 import Galery from "../views/Galery";
+import DetailsIdea from "../views/DetailsIdea";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "galery",
     element: <Galery />,
+  },
+  {
+    path: "ideas/detailsIdea",
+    element: <DetailsIdea />,
   },
 ]);
 

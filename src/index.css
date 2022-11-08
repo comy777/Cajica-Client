@@ -26,6 +26,10 @@ body {
   cursor: pointer;
 }
 
+.headerMenu {
+  z-index: 10000;
+}
+
 .container-1 {
   background-color: #283076;
 }

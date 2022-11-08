@@ -211,3 +211,5 @@ export const imagesCarousel = [
   "https://res.cloudinary.com/djtqfpw2e/image/upload/v1665153065/Cajica/2_iwoxwo.jpg",
   "https://res.cloudinary.com/djtqfpw2e/image/upload/v1665153064/Cajica/4_snogjo.jpg"
 ]
+
+export const imagesExtension = ['jpg', 'jpge', 'png', 'gif', 'raw']

@@ -1,15 +1,16 @@
 import { apiCajica } from "./config";
-import { ApiResponse, Form, GetDataAppResponse, GetDataCardsResponse, GetDataMaterialsResponse, GetFormsResponse } from "../interfaces/Response";
+import { ApiResponse, FileCloudinary, FilesCloudinaryReponse, Form, GetDataAppResponse, GetDataCardsResponse, GetDataMaterialsResponse, GetFormsResponse } from "../interfaces/Response";
 import { FormUser } from "../interfaces/Components";
 
-export const sendFormApi = async (form: FormUser) : Promise<ApiResponse | undefined> => {
+export const sendFormApi = async (form: FormUser): Promise<ApiResponse | undefined> => {
   try {
+    console.log(form)
     const { data } = await apiCajica.post<ApiResponse>("/", form);
     if (data.error) {
       console.log(data.error);
       return;
     }
-    return {msg: data.msg, id: data.id};
+    return { msg: data.msg, id: data.id };
   } catch (error: any) {
     const msg: any = error.response
       ? error.response.data.error
@@ -32,10 +33,20 @@ export const getDataApp = apiCajica.get<GetDataAppResponse>(`/app`)
 export const getDataCard = apiCajica.get<GetDataCardsResponse>(`/card`)
 export const getDataMaterials = apiCajica.get<GetDataMaterialsResponse>(`/materials`)
 
-export const getDataForms = async () : Promise<Form[] | undefined> => {
+export const getDataForms = async (): Promise<Form[] | undefined> => {
   try {
     const { data } = await apiCajica.get<GetFormsResponse>("/forms/data")
     return data.forms
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+export const getFilesGalery = async (): Promise<FileCloudinary[] | undefined> => {
+  try {
+    const resp = await apiCajica.get<FilesCloudinaryReponse>(`/get/files`)
+    const { files } = resp.data
+    return files
   } catch (error) {
     console.log(error)
   }

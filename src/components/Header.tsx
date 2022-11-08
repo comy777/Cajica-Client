@@ -27,7 +27,7 @@ const Header = () => {
       <div className="sm:flex md:hidden">
         {showHeader && <Menu />}
         {showMenu && (
-          <div className=" h-[100vh] sm:absolute top-0 bottom-0 right-0 left-0 show-menu z-50 w-80">
+          <div className=" h-[100vh] sm:absolute top-0 bottom-0 right-0 left-0 show-menu z-50 w-80 headerMenu">
             <h2 className="font-bold text-xl text-white">Menu</h2>
             {dataHeader.map((item, i) => (
               <div

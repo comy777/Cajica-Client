@@ -11,9 +11,9 @@ export interface GetDataAppResponse {
 }
 
 export interface DataApp {
-  _id:   string;
+  _id: string;
   title: string;
-  body:  string;
+  body: string;
   image: string;
 }
 
@@ -22,11 +22,11 @@ export interface GetDataCardsResponse {
 }
 
 export interface DataCard {
-  _id:          string;
-  title:        string;
-  image:        string;
-  path:         string;
-  body:         string;
+  _id: string;
+  title: string;
+  image: string;
+  path: string;
+  body: string;
   imageDetails: string;
 }
 
@@ -35,16 +35,16 @@ export interface GetDataMaterialsResponse {
 }
 
 export interface DataMaterials {
-  _id:   string;
+  _id: string;
   title: string;
   items: Item[];
 }
 
 export interface Item {
-  _id:   string;
+  _id: string;
   title: string;
   image: string;
-  href:  string;
+  href: string;
 }
 
 export interface GetDataResponse {
@@ -58,15 +58,58 @@ export interface GetFormsResponse {
 
 export interface Form {
   extensionFile: string;
-  originalname:  string;
-  _id:           string;
-  first_name:    string;
-  last_name:     string;
-  msg:           string;
-  email:         string;
-  file:          string;
-  url:           string;
-  createdAt:     string;
-  updatedAt:     string;
-  __v:           number;
+  originalname: string;
+  _id: string;
+  first_name: string;
+  last_name: string;
+  msg: string;
+  email: string;
+  file: string;
+  url: string;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+  icon: string;
+  enlace: string;
+}
+
+export interface FilesCloudinaryReponse {
+  files: FileCloudinary[];
+}
+
+export interface FileCloudinary {
+  asset_id: string;
+  public_id: string;
+  format: Format;
+  version: number;
+  resource_type: ResourceType;
+  type: Type;
+  created_at: string;
+  bytes: number;
+  width: number;
+  height: number;
+  folder: Folder;
+  access_mode: AccessMode;
+  url: string;
+  secure_url: string;
+}
+
+export enum AccessMode {
+  Public = "public",
+}
+
+export enum Folder {
+  Cajica = "Cajica",
+}
+
+export enum Format {
+  Jpg = "jpg",
+}
+
+export enum ResourceType {
+  Image = "image",
+}
+
+export enum Type {
+  Upload = "upload",
 }

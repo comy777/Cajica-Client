@@ -9,18 +9,18 @@ const useIdeas = () => {
 
   const getDataFormsApi = async () => {
     const resp = await getDataForms()
-    if(!resp) return
+    if (!resp) return
     setState(resp)
   }
 
   useEffect(() => {
-    if(showHeader) setShowHeader(false)
+    if (showHeader) setShowHeader(false)
   }, [])
 
   useEffect(() => {
-    (async() => await getDataFormsApi())()
+    (async () => await getDataFormsApi())()
   }, [])
-  
+
   return {
     state
   }

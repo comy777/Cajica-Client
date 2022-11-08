@@ -6,11 +6,12 @@ const FormComponent = () => {
     last_name,
     email,
     msg,
+    enlace,
     handleChange,
     loading,
     handleSubmit
-  } = useForm({ first_name: "", last_name: "", email: "", msg: "" });
-  const form = { first_name, last_name, email, msg };
+  } = useForm({ first_name: "", last_name: "", email: "", msg: "", enlace: "" });
+  const form = { first_name, last_name, email, msg, enlace };
 
   return (
     <div className="py-7 formContainer mb-10">
@@ -57,6 +58,20 @@ const FormComponent = () => {
                 className="block w-full rounded-md border-gray-300 pl-2 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                 name="email"
                 value={email}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-white">
+              Enlace
+            </label>
+            <div className="relative mt-1 rounded-md shadow-sm">
+              <input
+                type="text"
+                className="block w-full rounded-md border-gray-300 pl-2 pr-12 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                name="enlace"
+                value={enlace}
                 onChange={handleChange}
               />
             </div>

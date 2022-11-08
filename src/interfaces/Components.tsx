@@ -1,5 +1,5 @@
 import { FormEvent } from "react";
-import { DataApp, DataCard, DataMaterials } from "./Response";
+import { DataApp, DataCard, DataMaterials, Form } from "./Response";
 
 export interface StateHome {
   dataApp: DataApp[],
@@ -23,6 +23,7 @@ export interface FormUser {
   last_name: string;
   email: string;
   msg: string;
+  enlace: string
 }
 
 export interface SubmitForm {
@@ -58,4 +59,15 @@ export interface ImportanComponentProps {
 
 export interface ListImagesProps {
   data: DataCard[]
+}
+
+export interface ImagecomponentProps {
+  url: string
+  i: number
+  card?: boolean
+}
+
+export interface CardComponentProps {
+  data: Form
+  index: number
 }
