@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useHeader from "../hooks/useHeader";
 import { dataHeader } from "../utils/data";
 import Menu from "./Menu";
@@ -8,9 +9,11 @@ const Header = () => {
 
   return (
     <div className="flex items-center headerApp px-5 justify-between">
-      <h1 className="md:text-3xl sm:text-xl font-bold headerTextColor ">
-        Reci-Cajicá
-      </h1>
+      <Link to="/" >
+        <h1 className="md:text-3xl sm:text-xl font-bold headerTextColor ">
+          Reci-Cajicá
+        </h1>
+      </Link>
       {showHeader && (
         <Slide right>
           <div className="sm:hidden md:flex">
@@ -21,6 +24,10 @@ const Header = () => {
                 </div>
               </a>
             ))}
+            <Link to="ideas">
+              <div className="headerListItem rounded-lg p-2">
+                <p className="text-white text-sm font-bold">Ideas</p>
+              </div></Link>
           </div>
         </Slide>
       )}

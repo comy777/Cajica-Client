@@ -7,6 +7,7 @@ import useHome from "../hooks/useHome";
 import CarouselComponent from "../components/CarouselComponent";
 import ListMaterials from "../components/ListMaterials";
 import Galerycomponent from "../components/Galerycomponent";
+import Header from "../components/Header";
 
 const Home = () => {
   const Fade = require("react-reveal/Fade");
@@ -14,6 +15,7 @@ const Home = () => {
 
   return (
     <RemoveScroll enabled={showMenu}>
+      <Header />
       <Galerycomponent />
       <div className="overflow-hidden">
         <div id="home">

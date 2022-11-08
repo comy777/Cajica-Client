@@ -14,11 +14,7 @@ export const dataHeader = [
   {
     title: "Contactenos",
     route: "#contact",
-  },
-  {
-    title: "Ideas",
-    route: "ideas",
-  },
+  }
 ];
 
 export const dataCardImages = [
