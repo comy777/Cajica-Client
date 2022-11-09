@@ -8,7 +8,7 @@ const IdeasScreen = () => {
   return (
     <div>
       <Header />
-      <div className="min-h-screen max-h-auto md:p-24 sm:p-2 md:my-0 sm:my-4">
+      <div className="min-h-screen max-h-auto md:p-24 sm:p-2 md:my-0 sm:mt-4">
         <div className="grid md:grid-cols-3 sm:grid-cols-2 md:gap-4 sm:gap-2">
           {
             state.map((item, i) => {
@@ -18,6 +18,13 @@ const IdeasScreen = () => {
             })
           }
         </div>
+        {
+          state.length === 0 && (
+            <div>
+              <h3>Lo sentimos, aun no se han compartido ideas!!!</h3>
+            </div>
+          )
+        }
       </div>
     </div>
   )

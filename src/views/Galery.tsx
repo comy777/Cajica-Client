@@ -8,10 +8,11 @@ const Galery = () => {
   return (
     <div>
       <Header />
-      <div className="m-5 min-h-screen max-h-auto">
+      <div className="min-h-screen max-h-auto">
         <h1 className="text-center font-bold text-3xl" >Galeria</h1>
         <div className='flex justify-center items-center'>
-          <div className="grid md:grid-cols-5 md:gap-4 items-center sm:grid-cols-2 sm:gap-2">
+          <div
+            className="grid md:grid-cols-5 md:gap-4 items-center sm:grid-cols-2 sm:gap-2 mb-20 sm:px-2 md:px-0">
             {
               files.map((item, i) => (
                 <ImageComponent url={item.secure_url} i={i} key={i.toString()} />

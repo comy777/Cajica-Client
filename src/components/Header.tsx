@@ -27,7 +27,8 @@ const Header = () => {
             <Link to="ideas">
               <div className="headerListItem rounded-lg p-2">
                 <p className="text-white text-sm font-bold">Ideas</p>
-              </div></Link>
+              </div>
+            </Link>
           </div>
         </Slide>
       )}
@@ -47,6 +48,11 @@ const Header = () => {
                 </a>
               </div>
             ))}
+            <Link to="ideas">
+              <div className="show-menu-btn">
+                <p className="text-white text-sm font-bold">Ideas</p>
+              </div>
+            </Link>
           </div>
         )}
       </div>

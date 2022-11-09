@@ -18,7 +18,7 @@ const ImageComponent = ({ url, i, card }: ImagecomponentProps) => {
               className="h-48 w-48 object-contain"
             />
           ) : (
-            <Zoom >
+            <Zoom>
               <img src={url} loading="lazy" className="h-48 w-48" />
             </Zoom>
           )

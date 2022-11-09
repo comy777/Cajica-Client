@@ -4,7 +4,7 @@ import { AppContext } from "../context/AppContext"
 import { Form } from "../interfaces/Response"
 
 const useIdeas = () => {
-  const { setShowHeader, showHeader } = useContext(AppContext)
+  const { setShowHeader, showHeader, showMenu, setShowMenu } = useContext(AppContext)
   const [state, setState] = useState<Form[]>([])
 
   const getDataFormsApi = async () => {
@@ -15,6 +15,7 @@ const useIdeas = () => {
 
   useEffect(() => {
     if (showHeader) setShowHeader(false)
+    if (showMenu) setShowMenu(false)
   }, [])
 
   useEffect(() => {
